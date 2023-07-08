@@ -15,18 +15,10 @@ import Footer from './components/footer/Footer';
 import post1 from './content/blog-post.1.md';
 import post2 from './content/blog-post.2.md';
 import post3 from './content/blog-post.3.md';
+import theme from './theme'
 
 const sections = [
-  { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
+  { title: 'by alex kaariainen', url: '#' },
 ];
 
 const mainFeaturedPost = {
@@ -88,10 +80,10 @@ const defaultTheme = createTheme();
 
 export default function Blog() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="random ideas" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
