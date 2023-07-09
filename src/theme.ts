@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material';
-import IBMVGA from './Fonts/Web437_IBM_VGA_8x16-2x.woff'
+// import IBMVGA from './Fonts/Web437_IBM_VGA_8x16-2x.woff'
+import IBMVGA from './Fonts/WebPlus_IBM_VGA_8x16.woff'
 
 const ibmVGA = {
     fontFamily: 'IBMVGA',
@@ -18,6 +19,20 @@ const ibmVGA = {
 // TODO: Add color
 
 const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#00aa00',
+      },
+      background: {
+        default: '#000000',
+        paper: '#292929',
+      },
+      text: {
+        primary: '#aaaaaa',
+        secondary: '#00AA00',
+      },
+      divider: '#444444',
+    },
     typography: {
         fontFamily: 'IBMVGA, Arial'
     },
