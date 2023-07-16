@@ -6,12 +6,12 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "../header/Header";
 import MainFeaturedPost from "../post/mainFeaturedPost/MainFeaturedPost";
 import FeaturedPost from "../post/featuredPost/FeaturedPost";
-import Main from "../../Main";
-import Sidebar from "../sidebar/Sidebar";
-import Footer from "../footer/Footer";
+import Main from "./Main";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import Sidebar from "../Sidebar/Sidebar";
 import post1 from "../../content/blog-post.1.md";
 import post2 from "../../content/blog-post.2.md";
 import post3 from "../../content/blog-post.3.md";
@@ -20,14 +20,15 @@ import paintImg from "../../content/paint.png";
 import hmi from "../../content/hmi.jpg";
 import int from "../../content/int.png";
 import darwin from "../../content/darwin.png";
+import overtones from "../../content/overtones.png";
 
 const sections = [{ title: "by alex kaariainen", url: "#" }];
 
 const mainFeaturedPost = {
-  title: "Title of a longer featured blog post",
+  title: "Overtones, Harmonics, and Fundamental Frequencies",
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: "https://source.unsplash.com/random?wallpapers",
+    "(a lot of this is an oversimplification but all you really need to care about is the open high e string spectrogram showing a bunch of different frequencies and our ability to isolate the harmonic frequencies which can be seen in the other plots)",
+  image: overtones,
   imageText: "main image description",
   linkText: "Continue reading…",
 };
@@ -108,20 +109,17 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
-            <Sidebar
+            {/* <Main title="From the firehose" posts={posts} /> */}
+            {/* <Sidebar
               title={sidebar.title}
               description={sidebar.description}
               archives={sidebar.archives}
               social={sidebar.social}
-            />
+            /> */}
           </Grid>
         </main>
       </Container>
-      <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
-      />
+      <Footer title="Footer" description="I just think this stuff is neat" />
     </ThemeProvider>
   );
 }
