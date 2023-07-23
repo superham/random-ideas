@@ -119,7 +119,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-      <Footer title="Footer" description="I just think this stuff is neat" />
+      <Footer title="Footer" description="I just think this stuff is neat." />
     </ThemeProvider>
   );
 }
