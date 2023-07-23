@@ -25,6 +25,7 @@ import overtones from "../../content/overtones.png";
 const sections = [{ title: "by alex kaariainen", url: "#" }];
 
 const mainFeaturedPost = {
+  route: "overtones",
   title: "Overtones, Harmonics, and Fundamental Frequencies",
   description:
     "(a lot of this is an oversimplification but all you really need to care about is the open high e string spectrogram showing a bunch of different frequencies and our ability to isolate the harmonic frequencies which can be seen in the other plots)",
@@ -35,6 +36,7 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
+    route: "paint",
     title: "paint",
     date: "Fall, 2018",
     description: "An image manipulation program developed for MacOS.",
@@ -42,6 +44,7 @@ const featuredPosts = [
     imageLabel: "Image Text",
   },
   {
+    route: "hmi",
     title:
       "Recreating the prism adaptation paradigm in an immersive virtual environment",
     date: "Spring, 2020",
@@ -50,6 +53,7 @@ const featuredPosts = [
     imageLabel: "Image Text",
   },
   {
+    route: "int",
     title: "Arithmetic Coding - Integer Implementation",
     date: "Fall, 2020",
     description: "Research.",
@@ -57,6 +61,7 @@ const featuredPosts = [
     imageLabel: "Image Text",
   },
   {
+    route: "darwin",
     title: "Darwin's Playground",
     date: "Fall, 2020",
     description:

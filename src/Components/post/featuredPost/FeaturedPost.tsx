@@ -5,9 +5,12 @@ import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import { Outlet, Link } from "react-router-dom";
+import ButtonBase from "@mui/material/ButtonBase";
 
 interface FeaturedPostProps {
   post: {
+    route: string;
     date: string;
     description: string;
     image: string;
@@ -21,7 +24,7 @@ export default function FeaturedPost(props: FeaturedPostProps) {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
+      <CardActionArea component={Link} to={post.route}>
         <Card sx={{ display: "flex" }}>
           <CardContent sx={{ flex: 1 }}>
             <Typography component="h2" variant="h5">
